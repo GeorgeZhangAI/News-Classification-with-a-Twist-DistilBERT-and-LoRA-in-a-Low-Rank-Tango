@@ -1,22 +1,35 @@
-# Project Overview
+# README
 
-This project contains implementations of two models for text classification:
-1. **Advanced Model**: LoRA-enhanced DistilBERT.
-2. **Baseline Model**: FastText.
-
-Both models are trained and evaluated on the same dataset for performance comparison.
-
-## Directory Structure
+## Project Structure
 
 ```plaintext
 project_root/
 ├── bert (advanced)/         # Primary model: LoRA-enhanced DistilBERT
-│   ├── data_utils.py        # Handles data preprocessing such as tokenization and label mapping.
-│   ├── lora_finetune.py     # Main script for fine-tuning DistilBERT with LoRA and evaluating its performance.
-│   └── train_utils.py       # Contains helper functions for training and evaluation (e.g., loss computation, metrics).
-├── data/                    # Directory containing dataset files.
+│   ├── data_utils.py        # Data preprocessing: tokenization, label mapping.
+│   ├── lora_finetune.py     # Main script: fine-tuning and evaluation.
+│   └── train_utils.py       # Training and evaluation functions.
+├── data/                    # Dataset files
 │   ├── test.csv             # Test set.
 │   └── train.csv            # Training set.
-└── fasttext (baseline)/     # Baseline model using FastText.
-    ├── main.py              # Main script for training and evaluating the FastText model.
-    └── preprocessing.py     # Preprocesses the data for FastText (e.g., cleaning, tokenization).
+└── fasttext (baseline)/     # Baseline model: FastText
+    ├── main.py              # Main script: training and evaluation.
+    └── preprocessing.py     # Data preprocessing for FastText.
+```
+
+## How to Run
+> Note: Make sure to place all files in the directory structure exactly as shown above before running the scripts.
+
+### Baseline Model: FastText
+1. Navigate to the FastText directory: `cd fasttext\ \(baseline\)`
+2. Run the training and evaluation script: `python main.py`
+
+### Primary Model: LoRA-Enhanced DistilBERT
+1. Navigate to the BERT directory: `cd bert\ \(advanced\)`
+2. Execute the fine-tuning and evaluation script: `python lora_finetune.py`
+
+
+
+### Notes
+- Ensure all dependencies are installed as specified in the requirements.txt file (if provided).
+- Use Python 3.7 or higher for compatibility.
+- Adjust file paths in the scripts if using custom datasets or modified directory structures.
