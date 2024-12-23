@@ -1,5 +1,3 @@
-# README
-
 ## Project Structure
 
 project_root/
