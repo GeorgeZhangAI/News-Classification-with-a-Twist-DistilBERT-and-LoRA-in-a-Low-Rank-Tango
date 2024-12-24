@@ -1,0 +1,14 @@
+
+.DS_Store
+bert (advanced)/.DS_Store
+bert (advanced)/.DS_Store
+.DS_Store
+bert (advanced)/.ipynb_checkpoints/bert-checkpoint.py
+bert (advanced)/.ipynb_checkpoints/data_utils-checkpoint.py
+bert (advanced)/.ipynb_checkpoints/lora_finetune-checkpoint.py
+bert (advanced)/.ipynb_checkpoints/run-checkpoint.py
+bert (advanced)/.ipynb_checkpoints/train_eval-checkpoint.py
+bert (advanced)/.ipynb_checkpoints/train_utils-checkpoint.py
+bert (advanced)/.ipynb_checkpoints/utils-checkpoint.py
+fasttext (baseline)/.ipynb_checkpoints/main-checkpoint.py
+fasttext (baseline)/.ipynb_checkpoints/preprocessing-checkpoint.py
